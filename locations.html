@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Locations</title>
+</head>
+
+<body>
+    <div class="bar">    
+        <table>
+            <tr>
+                <td>
+                    <div class= "title2">
+                        <h1>Locations</h1>
+                    </div>
+                </td>
+                <td>
+                <div class="bar2">
+                <ul>
+                    <li><a href= "index.html">Home</a></li>
+                    <li>|</li>
+                    <li><a href="UE.html"> Entities</a></li>
+                    <li>|</li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li>|</li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                </ul>
+                </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="map">
+        <script>
+            function initMap() {
+                var perception={lat: 42.9628506, lng: -85.6636144};
+                var baker={lat:40.4901078, lng:-78.4085885};
+                var foot={lat:42.1014831, lng:-72.589811};
+                var map = new google.maps.Map(document.getElementById('map'), {zoom: 4,center: perception});
+                const contentString = '<p>Art gallery</p>'
+
+                const infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+            var marker = new google.maps.Marker({position: perception, map: map, title:"Perception"});
+            var marker2=new google.maps.Marker({position: baker, map: map});
+            var marker3=new google.maps.Marker({position: foot, map: map});
+  
+}
+        </script>
+        <script defer
+           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFMpeI6_IJkEjvNbF2QuBfVAvutRTTvJ8&callback=initMap">
+        </script>     
+    </div>
+
+    <div class="foot">
+        <ul>
+            <li>Share</li>
+            <li>|</li>
+            <li>Info</li>
+            <li>|</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>

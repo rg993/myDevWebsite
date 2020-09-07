@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Spectral+SC:wght@200&display=swap');
+
+
+*{margin:0;
+  padding:0;
+  font-family: 'Spectral SC', serif;;
+}
+
+#main {background-image: url(./Images/bar2.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+a {color:black;
+
+}
+
+h1 {
+
+    font-weight:100;
+    font-family: 'Spectral SC', serif;
+}
+
+#main .title h1{ 
+    color: white;
+    border: 3px solid white;
+    position: relative;
+    top: 100px;
+    width: 750px;
+    margin: 0 auto;
+    opacity:0.75;
+    text-align: center;
+    font-size: 150px;
+}
+
+.title2 h1{color:black ;
+    text-align: left;
+    font-size: 40px;
+    display: inline;
+}
+
+body{
+    background-color:white;
+}
+
+.foot{ bottom:0;
+    left:0;
+    right:0;
+
+}
+
+.bar ul, .foot ul{
+    text-align: center;
+}
+
+.bar li, .foot li{
+    padding: 20px;
+    font-weight:100; 
+    display: inline-block;
+    text-align: center;
+}
+
+.bar2 {
+    padding-left:225px;
+}
+
+.tbl table { 
+    height: 600px;
+    width: 100%;
+    font-family: 'Spectral SC', serif;
+    border-collapse: collapse;
+    table-layout: auto;
+    
+}
+
+.tbl thead, .tbl th { 
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Spectral SC', serif;
+
+}
+.tbl th, .tbl td {
+    text-align:center;
+    padding:10px;
+    border: 1px solid white;
+    font-family: 'Spectral SC', serif;
+}
+
+.tbl tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#indiv{ background-image: url(./Images/car.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    filter:brightness(50%)
+}
+
+#map{
+    height: 600px;
+    width: 100%;
+}
+
+.quote p { font-size: 50px;
+    font-style: italic;
+    color: white;
+    border: 3px solid white;
+    right:0;
+    top:350px;
+    text-align:right;
+    margin-left:600px;
+    position: relative;
+    
+
+}
+
+.timeline {
+    margin:0 auto;
+    margin-bottom:20px;
+    width: 100%;
+    
+  }
+    
+.ruler{
+    border-left: 6px solid black;
+    position: absolute;
+    height:525px;
+    margin-left: -3px;
+    left: 40%;
+    top: 10%;
+
+}
+  .container {
+    padding: 20px 40px;
+    position: relative;
+    background-color: white;
+    width: 50%;
+  }
+
+  .left {
+    left: -85%;
+  }
+  
+
+  .right {
+    left: 20%;
+  }
+
+  .foot{
+      text-align:center;
+      bottom:0;
+      position: absolute;
+  }
