@@ -9,13 +9,12 @@
   font-family: 'Spectral SC', serif;;
 }
 
-#main {background-image: url(./Images/bar2.jpg);
+#main {background-image: url("./Images/bar2.jpg");
   background-size: cover;
   background-position: bottom center;
   height: 600px;
   width: 100%;
   text-align: center;
-  
 }
 
 a {color:black;
@@ -26,6 +25,24 @@ h1 {
 
     font-weight:100;
     font-family: 'Spectral SC', serif;
+}
+
+.pleft { padding: 20px 40px;
+    display:flex;
+    margin:5px;
+
+}
+
+.pright { padding: 0px;
+    position: relative;
+    background-color: white;
+    width: 50%;
+    left: 45%;
+
+}
+
+.contact { padding: 20px 40px;
+
 }
 
 #main .title h1{ 
@@ -50,17 +67,11 @@ body{
     background-color:white;
 }
 
-.foot{ bottom:0;
-    left:0;
-    right:0;
-
-}
-
-.bar ul, .foot ul{
+.bar ul, .foot ul, .foot2 ul{
     text-align: center;
 }
 
-.bar li, .foot li{
+.bar li, .foot li, .foot2 li{
     padding: 20px;
     font-weight:100; 
     display: inline-block;
@@ -104,7 +115,15 @@ body{
     height: 600px;
     width: 100%;
     text-align: center;
-    filter:brightness(50%)
+}
+
+#indiv2{ background-image: url(ABD.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+   
 }
 
 #map{
@@ -113,16 +132,16 @@ body{
 }
 
 .quote p { font-size: 50px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-style: italic;
     color: white;
     border: 3px solid white;
     right:0;
-    top:350px;
+    top:315px;
     text-align:right;
     margin-left:600px;
     position: relative;
     
-
 }
 
 .timeline {
@@ -160,5 +179,16 @@ body{
   .foot{
       text-align:center;
       bottom:0;
-      position: absolute;
+      position: relative;
+      left:0;
+      right:0;
+  }
+
+  .foot2 { 
+    text-align: center;
+    bottom:0;
+    position: absolute;
+    left:0;
+    right:0;
+
   }
